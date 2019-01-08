@@ -29,6 +29,7 @@
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
     "react-helmet": "^5.2.0",
+    "react-typeform-embed": "^0.1.6",
     "react-typography": "^0.16.13",
     "typeface-merriweather": "0.0.43",
     "typeface-montserrat": "0.0.43",
@@ -59,5 +60,8 @@
     "start": "npm run develop",
     "build": "gatsby build",
     "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js"
+  },
+  "resolutions": {
+    "url-loader": "1.1.2"
   }
 }

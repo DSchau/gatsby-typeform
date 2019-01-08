@@ -5,6 +5,7 @@ import Bio from '../components/Bio'
 import Layout from '../components/Layout'
 import SEO from '../components/seo'
 import { rhythm, scale } from '../utils/typography'
+import { ReactTypeformEmbed } from 'react-typeform-embed'
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -21,6 +22,9 @@ class BlogPostTemplate extends React.Component {
           }}
         />
         <Bio />
+        <ReactTypeformEmbed url={survey.frontmatter.url} 
+        mode='drawer_left'
+         />
       </Layout>
     )
   }
